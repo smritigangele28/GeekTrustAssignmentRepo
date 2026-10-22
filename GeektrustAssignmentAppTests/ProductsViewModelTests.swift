@@ -3,6 +3,7 @@ import XCTest
 
 @MainActor
 final class ProductsViewModelTests: XCTestCase {
+    
     func testInitialLoadPublishesProducts() async {
         let service = MockProductsService(results: [.success(ProductPage(products: [Product(id: 1), Product(id: 2)], nextPage: 1))])
         let viewModel = ProductsViewModel(service: service)

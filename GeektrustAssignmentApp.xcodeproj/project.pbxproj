@@ -6,8 +6,19 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		F29591543089D5FC00328025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29590B23088015C00328025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F29590B93088015C00328025;
+			remoteInfo = GeektrustAssignmentApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F29590BA3088015C00328025 /* GeektrustAssignmentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeektrustAssignmentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29591503089D5FC00328025 /* GeektrustAssignmentAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeektrustAssignmentAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,20 @@
 			path = GeektrustAssignmentApp;
 			sourceTree = "<group>";
 		};
+		F29591513089D5FC00328025 /* GeektrustAssignmentAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GeektrustAssignmentAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F29590B73088015C00328025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		F295914D3089D5FC00328025 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -44,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				F29590BC3088015C00328025 /* GeektrustAssignmentApp */,
+				F29591513089D5FC00328025 /* GeektrustAssignmentAppTests */,
 				F29590BB3088015C00328025 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F29590BA3088015C00328025 /* GeektrustAssignmentApp.app */,
+				F29591503089D5FC00328025 /* GeektrustAssignmentAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +100,27 @@
 			productReference = F29590BA3088015C00328025 /* GeektrustAssignmentApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F295914F3089D5FC00328025 /* GeektrustAssignmentAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29591563089D5FC00328025 /* Build configuration list for PBXNativeTarget "GeektrustAssignmentAppTests" */;
+			buildPhases = (
+				F295914C3089D5FC00328025 /* Sources */,
+				F295914D3089D5FC00328025 /* Frameworks */,
+				F295914E3089D5FC00328025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F29591553089D5FC00328025 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F29591513089D5FC00328025 /* GeektrustAssignmentAppTests */,
+			);
+			name = GeektrustAssignmentAppTests;
+			productName = GeektrustAssignmentAppTests;
+			productReference = F29591503089D5FC00328025 /* GeektrustAssignmentAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -89,6 +133,10 @@
 				TargetAttributes = {
 					F29590B93088015C00328025 = {
 						CreatedOnToolsVersion = 27.0;
+					};
+					F295914F3089D5FC00328025 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = F29590B93088015C00328025;
 					};
 				};
 			};
@@ -107,12 +155,18 @@
 			projectRoot = "";
 			targets = (
 				F29590B93088015C00328025 /* GeektrustAssignmentApp */,
+				F295914F3089D5FC00328025 /* GeektrustAssignmentAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F29590B83088015C00328025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		F295914E3089D5FC00328025 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -125,7 +179,20 @@
 			files = (
 			);
 		};
+		F295914C3089D5FC00328025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F29591553089D5FC00328025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F29590B93088015C00328025 /* GeektrustAssignmentApp */;
+			targetProxy = F29591543089D5FC00328025 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F29590CE3088015D00328025 /* Debug configuration for PBXNativeTarget "GeektrustAssignmentApp" */ = {
@@ -311,6 +378,48 @@
 			};
 			name = Release;
 		};
+		F29591573089D5FC00328025 /* Debug configuration for PBXNativeTarget "GeektrustAssignmentAppTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XL854TR9S9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smriti.GeektrustAssignmentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeektrustAssignmentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GeektrustAssignmentApp";
+			};
+			name = Debug;
+		};
+		F29591583089D5FC00328025 /* Release configuration for PBXNativeTarget "GeektrustAssignmentAppTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XL854TR9S9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smriti.GeektrustAssignmentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeektrustAssignmentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GeektrustAssignmentApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +436,14 @@
 			buildConfigurations = (
 				F29590CE3088015D00328025 /* Debug configuration for PBXNativeTarget "GeektrustAssignmentApp" */,
 				F29590CF3088015D00328025 /* Release configuration for PBXNativeTarget "GeektrustAssignmentApp" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		F29591563089D5FC00328025 /* Build configuration list for PBXNativeTarget "GeektrustAssignmentAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29591573089D5FC00328025 /* Debug configuration for PBXNativeTarget "GeektrustAssignmentAppTests" */,
+				F29591583089D5FC00328025 /* Release configuration for PBXNativeTarget "GeektrustAssignmentAppTests" */,
 			);
 			defaultConfigurationName = Release;
 		};
